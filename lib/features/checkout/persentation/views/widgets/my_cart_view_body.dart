@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:payment/features/checkout/persentation/views/widgets/custom_botum.dart';
-import 'package:payment/features/checkout/persentation/views/widgets/custom_divider_widget.dart';
+import 'package:payment/core/widgets/custom_botum.dart';
+import 'package:payment/core/widgets/custom_divider_widget.dart';
 import 'package:payment/features/checkout/persentation/views/widgets/item_order_widget.dart';
 import 'package:payment/features/checkout/persentation/views/widgets/total_price_widget.dart';
 
