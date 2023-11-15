@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:payment/core/widgets/custom_botum.dart';
 import 'package:payment/core/widgets/custom_divider_widget.dart';
+import 'package:payment/features/checkout/persentation/views/payment_details_view.dart';
 import 'package:payment/features/checkout/persentation/views/widgets/item_order_widget.dart';
 import 'package:payment/features/checkout/persentation/views/widgets/total_price_widget.dart';
 
@@ -61,8 +62,13 @@ class _MyCartViewBodyState extends State<MyCartViewBody> {
           const SizedBox(
             height: 20,
           ),
-          const CustomBottum(
+          CustomBottum(
             text: 'Complete Payment',
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                return const PaymentDetailsView();
+              }));
+            },
           ),
           const SizedBox(
             height: 40,
