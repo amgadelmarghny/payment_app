@@ -3,6 +3,7 @@ import 'package:payment/core/widgets/custom_botum.dart';
 import 'package:payment/core/widgets/custom_divider_widget.dart';
 import 'package:payment/features/checkout/persentation/views/payment_details_view.dart';
 import 'package:payment/features/checkout/persentation/views/widgets/item_order_widget.dart';
+import 'package:payment/features/checkout/persentation/views/widgets/payment_method_list_view.dart';
 import 'package:payment/features/checkout/persentation/views/widgets/total_price_widget.dart';
 
 class MyCartViewBody extends StatefulWidget {
@@ -65,14 +66,50 @@ class _MyCartViewBodyState extends State<MyCartViewBody> {
           CustomBottum(
             text: 'Complete Payment',
             onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-                return const PaymentDetailsView();
-              }));
+              // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+              //   return const PaymentDetailsView();
+              // }));
+              showBottomSheet(
+                  backgroundColor: Colors.grey.shade300,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20),
+                    ),
+                  ),
+                  context: context,
+                  builder: (context) {
+                    return const PaymentMethodButtomSheet();
+                  });
             },
           ),
           const SizedBox(
             height: 12,
           ),
+        ],
+      ),
+    );
+  }
+}
+
+class PaymentMethodButtomSheet extends StatelessWidget {
+  const PaymentMethodButtomSheet({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Padding(
+      padding: EdgeInsets.all(16),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          SizedBox(
+            height: 16,
+          ),
+          PaymentMethodItemListView(),
+          SizedBox(
+            height: 20,
+          ),
+          CustomBottum(text: 'Continue'),
         ],
       ),
     );
