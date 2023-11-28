@@ -1,32 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:payment/core/utils/style.dart';
 
-class CustomBottum extends StatelessWidget {
-  const CustomBottum({
+class FinalPaymentButton extends StatelessWidget {
+  const FinalPaymentButton({
     super.key,
-    required this.text,
-    this.onTap,
   });
-  final void Function()? onTap;
-  final String text;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: () {},
       child: Container(
-        width: 350,
-        height: 73,
-        padding: const EdgeInsets.symmetric(horizontal: 75, vertical: 23),
+        width: 113,
+        height: 58,
         decoration: ShapeDecoration(
-          color: const Color(0xFF34A853),
           shape: RoundedRectangleBorder(
+            side: const BorderSide(
+              width: 1.50,
+              color: Color(0xFF34A853),
+            ),
             borderRadius: BorderRadius.circular(15),
           ),
         ),
         child: Center(
           child: Text(
-            text,
-            style: Styles.style20,
+            'PAID',
+            style: Styles.style24.copyWith(
+              color: const Color(0xFF34A853),
+            ),
           ),
         ),
       ),

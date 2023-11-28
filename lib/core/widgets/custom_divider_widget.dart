@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class CustomDivider extends StatelessWidget {
@@ -15,7 +14,7 @@ class CustomDivider extends StatelessWidget {
           side: BorderSide(
             width: 1,
             strokeAlign: BorderSide.strokeAlignCenter,
-            color: Color(0xFFC6C6C6),
+            color: Color(0xFFC7C7C7),
           ),
         ),
       ),

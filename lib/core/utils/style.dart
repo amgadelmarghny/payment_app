@@ -30,11 +30,11 @@ abstract class Styles {
     height: 0,
   );
 
-  static const TextStyle style20 = TextStyle(
-    color: Colors.black,
+  static TextStyle style20 = TextStyle(
+    color: Colors.black.withOpacity(0.800000011920929),
     fontSize: 20,
     fontFamily: 'Inter',
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w400,
     height: 0,
   );
   static const TextStyle style22 = TextStyle(

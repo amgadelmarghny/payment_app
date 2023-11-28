@@ -1,15 +1,16 @@
-import 'package:flutter/material.dart';
-import 'package:payment/core/utils/style.dart';
 
-class TotalPrice extends StatelessWidget {
-  const TotalPrice({
+import 'package:flutter/material.dart';
+
+import '../../../../../core/utils/style.dart';
+
+class CustomTextRow extends StatelessWidget {
+  const CustomTextRow({
     super.key,
     required this.title,
-    required this.price,
+    required this.subTitle,
   });
-
   final String title;
-  final String price;
+  final String subTitle;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -17,13 +18,15 @@ class TotalPrice extends StatelessWidget {
       children: [
         Text(
           title,
-          style: Styles.style24,
+          style: Styles.style18,
         ),
         Text(
-          '\$' '$price',
-          style: Styles.style24,
-        )
+          subTitle,
+          style: Styles.styleBlod18,
+        ),
       ],
     );
   }
 }
+
+
