@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:payment/core/utils/style.dart';
 import 'package:payment/core/widgets/fianl_payment_button.dart';
-import 'package:payment/features/checkout/persentation/views/widgets/card_info_item.dart';
-import 'package:payment/features/checkout/persentation/views/widgets/custom_text_row.dart';
-import 'package:payment/features/checkout/persentation/views/widgets/total_price_widget.dart';
+import 'package:payment/features/checkout/presentation/views/widgets/custom_text_row.dart';
+import 'package:payment/features/checkout/presentation/views/widgets/total_price_widget.dart';
+
+import 'card_info_item.dart';
 
 class ThankfullCard extends StatelessWidget {
   const ThankfullCard({

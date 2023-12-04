@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:payment/features/checkout/persentation/views/widgets/custom_check_icon.dart';
-import 'package:payment/features/checkout/persentation/views/widgets/custom_dashed_line.dart';
+
+import 'custom_check_icon.dart';
+import 'custom_dashed_line.dart';
 import 'thankfull_card_widget.dart';
 
 class ThankfullViewBody extends StatelessWidget {
