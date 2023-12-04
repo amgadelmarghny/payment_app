@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:payment/core/widgets/custom_botum.dart';
 import 'package:payment/core/widgets/custom_divider_widget.dart';
-import 'package:payment/features/checkout/persentation/views/payment_details_view.dart';
 import 'package:payment/features/checkout/persentation/views/widgets/item_order_widget.dart';
 import 'package:payment/features/checkout/persentation/views/widgets/payment_method_list_view.dart';
 import 'package:payment/features/checkout/persentation/views/widgets/total_price_widget.dart';
@@ -32,7 +31,7 @@ class _MyCartViewBodyState extends State<MyCartViewBody> {
             height: 15,
           ),
           const ItemDetails(
-            title: 'Order Subtota',
+            title: 'Order Subtotal',
             price: '42.97',
           ),
           const SizedBox(
